@@ -1,0 +1,1491 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meena Bazar</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+</head>
+
+<body>
+
+
+
+
+    <nav class="bg-green-600 md:bg-white shadow-lg sticky top-0 z-50 mt-3">
+        <section>
+            <div class="flex my-3 justify-around gap-2">
+                <div class="lg:block hidden ">
+                    <img src="./images/main-logo.png" alt="" class="rounded bd shadow" width="150px" height="120px">
+                </div>
+                <div
+                    class="flex gap-3 bg-white shadow px-8 py-1 rounded border border-slate-300 hover:border-lime-600 hidden lg:flex">
+                    <div class="">
+                        <span class=" text-xl">
+                            <a>
+                                <ion-icon name="location-outline"></ion-icon>
+                            </a>
+                        </span>
+                    </div>
+                    <div class="hover:text-green-700 text-xs font-medium" onclick="row()">
+                        <button>Delivary in 59 min</button>
+                        <button>Select Area</button>
+                    </div>
+                </div>
+
+                <div class="shadow md:p-0 p-5 border ">
+                    <button class=" bg-white"><input type="search" placeholder="search by product brand or name"
+                            class="lg:px-48 px-24 border border-slate-300 hover:border-lime-600"></button>
+                </div>
+                <div
+                    class="lg:flex items-center bg-white border border-slate-300 px-5 py-1 rounded shadow hover:border-lime-600 hover:text-green-700  hidden">
+                    <div class="flex items-center">
+                        <span class="text-xl mt-1 px-1"><a href=""><ion-icon
+                                    name="person-circle-outline"></ion-icon></a></span>
+                    </div>
+                    <div class="px-5">
+                        <h1 class="text-sm px-1 text-nowrap  "><a href="">Sing in</a></h1>
+                    </div>
+                </div>
+                <div
+                    class="bg-green-400 lg:flex px-4 md:py-1 rounded border border-slate-300 shadow hover:border-lime-600 hidden">
+                    <button class="flex text-white font-semibold">
+                        <span class="mt-1 px-1"><a href=""><ion-icon name="heart-outline"></ion-icon></a></span>
+                        <div>
+                            <h1 class="text-xs">0 item</h1>
+                            <h1 class="text-xs">Wishlist</h1>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="flex gap-1">
+            <div class="flex gap-1" onclick="defind()">
+                <div class="flex md:bg-green-400 px-11 py-2 justify-around gap-3">
+                    <div>
+                        <button class="md:text-xl text-white text-3xl"><ion-icon
+                                name="menu-outline"></ion-icon></button>
+                    </div>
+                    <div class="hidden lg:block">
+                        <h1 class="text-white font-bold"><button>Categories</button></h1>
+                    </div>
+                    <div class="hidden lg:block">
+                        <button class="text-white text-xl"><ion-icon name="caret-forward-outline"></ion-icon>
+                        </button>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="absolute mt-11 hidden bg-white shadow m-3" id="top-1">
+                    <ul class="overflow-y-scroll h-80 px-11">
+                        <li class="p-2">
+                            <div class="flex gap-1 top-2">
+                                <img src="./images/1.webp" alt="" height="10px" width="20px">
+                                <a href="" class="font-semibold text-sm">Meat</a>
+                                <span class="test-xs text-gray-300 flex flex-1 justify-end items-center">
+                                    <a href=""> <ion-icon name="chevron-forward-outline"></ion-icon></a>
+                                </span>
+                            </div>
+                            <div class="MenuUL absolute left-32 top-0 bg-white shadow hidden">
+                                <ul class="px-8 py-3">
+                                    <li class="font-medium text-sm p-2 text-nowrap"><a href="">Beef</a></li>
+                                    <li class="font-medium text-sm p-2"><a href="">Chicken</a></li>
+                                    <li class="font-medium text-sm p-2"><a href="">Duck</a></li>
+                                    <li class="font-medium text-sm p-2"><a href="">Mutton</a></li>
+                                    <li class="font-medium text-sm p-2"><a href="">Bird</a></li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="p-2">
+                            <div class="flex gap-1 top-2">
+                                <img src="./images/2.webp" alt="" height="10px" width="20px">
+                                <a href="" class="font-semibold text-sm">Fruits</a>
+
+                                <span class="test-xs text-gray-300 flex flex-1 justify-end items-center">
+                                    <a href=""> <ion-icon name="chevron-forward-outline"></ion-icon></a>
+                                </span>
+                            </div>
+
+
+                            <div class="MenuUL absolute left-56 top-8 bg-white shadow hidden">
+                                <ul class="px-8 py-3">
+                                    <li class="font-medium text-sm p-2 text-nowrap"><a href="">Imported Fruits</a></li>
+                                    <li class="font-medium text-sm p-2 text-nowrap"><a href="">Local Fruits</a></li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="p-2">
+                            <div class="flex gap-1 top-2">
+                                <img src="./images/3.webp" alt="" height="10px" width="20px">
+                                <a href="" class="font-semibold text-sm">Vegetables</a>
+
+                                <span class="test-xs text-gray-300 flex flex-1 justify-end items-center">
+                                    <a href=""> <ion-icon name="chevron-forward-outline"></ion-icon></a>
+                                </span>
+                            </div>
+
+
+                            <div class="MenuUL absolute left-56 top-11 bg-white shadow hidden">
+                                <ul class="px-8 py-3">
+                                    <li class="font-medium text-sm p-2 text-nowrap"><a href="">Imported Vegetables</a>
+                                    </li>
+                                    <li class="font-medium text-sm p-2 text-nowrap"><a href="">Local Vegetables</a></li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="p-2">
+                            <div class="flex gap-1  top-2">
+                                <img src="./images/4.webp" alt="" height="10px" width="20px">
+                                <a href="" class="font-semibold text-sm">Dairy</a>
+
+                                <span class="test-xs text-gray-300 flex flex-1 justify-end items-center">
+                                    <a href=""> <ion-icon name="chevron-forward-outline"></ion-icon></a>
+                                </span>
+                            </div>
+
+                            <div class="MenuUL absolute left-56 top-11 bg-white shadow hidden">
+                                <ul class="px-8 py-3">
+                                    <li class="font-medium text-sm p-2 text-nowrap"><a href="">Borhani</a></li>
+                                    <li class="font-medium text-sm p-2 text-nowrap"><a href="">Butter</a></li>
+                                    <li class="font-medium text-sm p-2 text-nowrap"><a href="">Cheese</a></li>
+                                    <li class="font-medium text-sm p-2 text-nowrap"><a href="">Curd</a></li>
+                                    <li class="font-medium text-sm p-2 text-nowrap"><a href="">Ice Cream</a></li>
+                                    <li class="font-medium text-sm p-2 text-nowrap"><a href="">Margarin</a></li>
+                                    <li class="font-medium text-sm p-2 text-nowrap"><a href="">Matha</a></li>
+                                    <li class="font-medium text-sm p-2 text-nowrap"><a href="">Yogurt</a></li>
+                                </ul>
+                            </div>
+
+
+                        </li>
+                        <li class="p-2">
+                            <div class="flex gap-1 top-2">
+                                <img src="./images/5.webp" alt="" height="10px" width="20px">
+                                <a href="" class="font-semibold text-sm">Frozen</a> <span
+                                    class="test-xs text-gray-300 flex flex-1 justify-end items-center">
+                                    <a href=""> <ion-icon name="chevron-forward-outline"></ion-icon></a>
+                                </span>
+                            </div>
+
+                            <div class="MenuUL absolute left-56 top-11 bg-white shadow hidden">
+                                <ul class="px-8 py-3">
+                                    <li class="font-medium text-sm p-2 text-nowrap"><a href="">Sea Food</a></li>
+                                    <li class="font-medium text-sm p-2 text-nowrap"><a href="">Snack</a></li>
+                                    <li class="font-medium text-sm p-2 text-nowrap"><a href="">Frozen Meat</a></li>
+                                    <li class="font-medium text-sm p-2 text-nowrap"><a href="">Frozen Veg</a></li>
+                                    <li class="font-medium text-sm p-2 text-nowrap"><a href="">Processed Meat</a></li>
+                                </ul>
+                            </div>
+
+                        </li>
+                        <li class=" p-2">
+                            <div class="flex gap-1 top-2">
+                                <img src="./images/6.webp" alt="" height="10px" width="20px">
+                                <a href="" class="font-semibold text-sm">Grocery</a> <span
+                                    class="test-xs text-gray-300 flex flex-1 justify-end items-center">
+                                    <a href=""> <ion-icon name="chevron-forward-outline"></ion-icon></a>
+                                </span>
+                            </div>
+
+                            <div class="MenuUL absolute left-56 top-11 bg-white shadow hidden h-56 overflow-y-scroll">
+                                <ul class="px-8 py-3">
+                                    <li class="font-medium text-sm p-2 text-nowrap"><a href="">Cookies</a></li>
+                                    <li class="font-medium text-sm p-2 text-nowrap"><a href="">Biskut</a></li>
+                                    <li class="font-medium text-sm p-2 text-nowrap"><a href="">Candies</a></li>
+                                    <li class="font-medium text-sm p-2 text-nowrap"><a href="">Mouth Fresher</a></li>
+                                    <li class="font-medium text-sm p-2 text-nowrap"><a href="">Snacks</a></li>
+                                    <li class="font-medium text-sm p-2 text-nowrap"><a href="">Rice</a></li>
+                                    <li class="font-medium text-sm p-2 text-nowrap"><a href="">Suger</a></li>
+                                    <li class="font-medium text-sm p-2 text-nowrap"><a href="">Vineger</a></li>
+                                    <li class="font-medium text-sm p-2 text-nowrap"><a href="">Cooking Oil</a></li>
+                                    <li class="font-medium text-sm p-2 text-nowrap"><a href="">Enhancer</a></li>
+                                    <li class="font-medium text-sm p-2 text-nowrap"><a href="">Ghee</a></li>
+                                    <li class="font-medium text-sm p-2 text-nowrap"><a href="">Pickles</a></li>
+                                    <li class="font-medium text-sm p-2 text-nowrap"><a href="">Sauces</a></li>
+                                    <li class="font-medium text-sm p-2 text-nowrap"><a href="">Chocolate</a></li>
+                                    <li class="font-medium text-sm p-2 text-nowrap"><a href="">Bread</a></li>
+                                    <li class="font-medium text-sm p-2 text-nowrap"><a href="">Cake</a></li>
+                                    <li class="font-medium text-sm p-2 text-nowrap"><a href="">Sweets</a></li>
+                                </ul>
+                            </div>
+
+
+                        </li>
+
+                        <li class="flex gap-1 p-2">
+                            <img src="./images/7.webp" alt="" height="10px" width="20px">
+                            <a href="" class="font-semibold text-sm">House Hold</a> <span
+                                class="test-xs text-gray-300 flex flex-1 justify-end items-center">
+                                <a href=""> <ion-icon name="chevron-forward-outline"></ion-icon></a>
+                            </span>
+                        </li>
+
+
+                        <li class="flex gap-1 p-2">
+                            <img src="./images/8.webp" alt="" height="10px" width="20px">
+                            <a href="" class="font-semibold text-sm">Personal Care</a> <span
+                                class="test-xs text-gray-300 flex flex-1 justify-end items-center">
+                                <a href=""> <ion-icon name="chevron-forward-outline"></ion-icon></a>
+                            </span>
+                        </li>
+                        <li class="flex gap-1 p-2">
+                            <img src="./images/9.webp" alt="" height="10px" width="20px">
+                            <a href="" class="font-semibold text-sm">Pharmacy</a> <span
+                                class="test-xs text-gray-300 flex flex-1 justify-end items-center">
+                                <a href=""> <ion-icon name="chevron-forward-outline"></ion-icon></a>
+                            </span>
+                        </li>
+                        <li class="flex gap-1 p-2">
+                            <img src="./images/10.webp" alt="" height="10px" width="20px">
+                            <a href="" class="font-semibold text-sm">Kitchen Ware</a> <span
+                                class="test-xs text-gray-300 flex flex-1 justify-end items-center">
+                                <a href=""> <ion-icon name="chevron-forward-outline"></ion-icon></a>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class=" md:bg-green-400 md:p-1 md:flex md:flex-1 md:items-center md:p-2 hidden">
+                <h1 class="md:text-sm text-xl text-white font-semibold"><a href="">Trank Order</a></h1>
+            </div>
+        </section>
+    </nav>
+
+    <section class="mt-5">
+        <div>
+            <div class="lg:flex gap-2 mx-2">
+                <div class="grid lg:grid-cols-2 grid-cols-1 lg:gap-2 gap-4">
+                    <div>
+                        <a href=""> <img src="./images/img-1.webp" alt="" width="1200px" height="900px"
+                                class="rounded"></a>
+                    </div>
+                    <div>
+                        <a href=""> <img src="./images/img-2.webp" alt="" width="1500px" height="900px"
+                                class="rounded shadow-lg"></a>
+                    </div>
+                    <div>
+                        <a href=""> <img src="./images/img-3.webp" alt="" width="1500px" height="900px"
+                                class="rounded shadow-lg"></a>
+                    </div>
+                    <div>
+
+                        <a href=""><img src="./images/img-4.webp" alt="" width="1500px" height="900px"
+                                class="rounded shadow-lg"></a>
+                    </div>
+                </div>
+
+
+
+
+                <div id="controls-carousel"
+                    class="  relative w-full border-4 border-amber-400 rounded md:mt-0 mt-5 shadow-lg"
+                    data-carousel="static">
+                    <div class="bg-amber-400">
+                        <h1 class="font-bold text-xl p-5">Deals of the week!
+                        </h1>
+                    </div>
+                    <!-- Carousel wrapper -->
+                    <div class="relative h-56 overflow-hidden rounded-lg h-96">
+                        <!-- Item 1 -->
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <img src="./images/119GKJsMlWRrqI6o4t8692DkF5XeNR1JjmRPlYuceG___lg.webp"
+                                class=" h-72 w-80 absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                alt="...">
+
+                            <div class="">
+                                <img src="./images/44dS2Af29jWF5mzZmoHNi0agRfxfrHAVJVV6dgkWDU___sm.webp" alt=""
+                                    class="m-2 p-2">
+                            </div>
+                        </div>
+                        <!-- Item 2 -->
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+                            <img src="./images/227p0LC1sKOOJaieRPmXq2UpeA3zbrZXokKa5Gpv5R___lg.webp"
+                                class="h-72 w-80 absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                alt="...">
+                            <button class="bg-red-500 m-4 text-xs text-white p-1 rounded-lg font-bold">Vat Free</button>
+                        </div>
+                        <!-- Item 3 -->
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <img src="./images/336VCyiHnchEDqJdlONtYBzjR9OEzG5NDL43Nww2Y1___lg.webp"
+                                class="h-64 absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                alt="...">
+                            <button class="bg-red-500 m-4 text-xs text-white p-1 rounded-lg font-bold">Vat Free</button>
+                        </div>
+
+
+
+                        <!-- Slider controls -->
+                        <button type="button"
+                            class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                            data-carousel-prev>
+                            <span
+                                class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                                <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="M5 1 1 5l4 4" />
+                                </svg>
+                                <span class="sr-only">Previous</span>
+                            </span>
+                        </button>
+                        <button type="button"
+                            class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                            data-carousel-next>
+                            <span
+                                class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                                <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="m1 9 4-4-4-4" />
+                                </svg>
+                                <span class="sr-only">Next</span>
+                            </span>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="mt-5 m-2">
+        <div class="lg:flex lg:gap-2 mx-0 justify-center grid grid-cols-2 gap-3">
+            <div
+                class="flex gap-1 items-center bg-white shadow px-8 py-3 rounded-lg border border-amber-400 hover:border hover:border-green-400 hover:shadow-xl">
+                <div class="">
+                    <a href=""><img src="./images/UVMhVReE1aJeQYtHoC3gFjv7rDw2qHR2nVzgipnet___xsm.webp" alt=""
+                            height="20px" width="40px"></a>
+                </div>
+                <h1 class=" text-sm font-semibold"><a href="">Unilever</a></h1>
+            </div>
+
+
+            <div
+                class="flex gap-1 items-center bg-white shadow px-8 py-3 rounded-lg border border-amber-400 hover:border hover:border-green-400 hover:shadow-xl">
+                <div class="">
+                    <a href=""><img src="./images/55GNlmuKD1oYMUVbnRNP5xS29HDQZRWF3U8TrXWOHO___xsm.webp" alt=""
+                            height="20px" width="40px"></a>
+                </div>
+                <h1 class=" text-sm font-semibold"><a href="">Pet Shop</a></h1>
+            </div>
+
+
+            <div
+                class="flex  gap-1 items-center bg-white shadow px-8 py-3 rounded-lg border border-amber-400 hover:border hover:border-green-400 hover:shadow-xl">
+                <div class="">
+                    <a href=""> <img src="./images/66lQy54TjMk5kT9r53sTgFKXPltb00I06q7muGYRnB___xsm.webp" alt=""
+                            height="20px" width="40px"></a>
+                </div>
+                <h1 class=" text-sm font-semibold"><a href="">Winter Item</a></h1>
+            </div>
+
+
+            <div
+                class="flex  gap-1 items-center bg-white shadow px-8 py-3 rounded-lg border border-amber-400 hover:border hover:border-green-400 hover:shadow-xl">
+                <div class="">
+                    <a href=""><img src="./images/77b48wQOl4ZMtzMUwhkLd8ZKCIOT2qExgrZo2jUqhj___xsm.webp" alt=""
+                            height="20px" width="40px"></a>
+                </div>
+                <h1 class=" text-sm font-semibold"><a href="">Buy & Get Free</a></h1>
+            </div>
+
+            <div
+                class="flex gap-1 items-center bg-white shadow px-8 py-3 rounded-lg border border-amber-400 hover:border hover:border-green-400 hover:shadow-xl">
+                <div class="">
+                    <a href=""><img src="./images/99oEUUTl2Gvjhx0t6jK2wZ1aPnUTLED7XUSCaQdifv___xsm.webp" alt=""
+                            height="20px" width="40px"></a>
+                </div>
+                <h1 class=" text-sm font-semibold"><a href="">Dangu Corner</a></h1>
+            </div>
+
+
+
+            <div
+                class="flex gap-1 items-center bg-white shadow px-8 py-3 rounded-lg border border-amber-400 hover:border hover:border-green-400 hover:shadow-xl">
+                <div class="">
+                    <a href=""><img src="./images/10CoLKQyzHjX32xi1z8TmO2nz8QZ2Uy4Zaf4ItIuB6___xsm.webp" alt=""
+                            height="20px" width="40px"></a>
+                </div>
+                <h1 class=" text-sm font-semibold"><a href="">Deals Of the Week</a></h1>
+            </div>
+
+
+
+        </div>
+    </section>
+
+
+    <section class="absolute top-0 z-50 flex justify-center items-center hidden" style="width: 100%; height: 100%; "
+        id="test-1">
+        <div class=" ">
+            <div class="bg-white h-72 w-80 p-5  rounded-lg shadow-xl border border-amber-400">
+                <div class=" flex justify-center rounded mt-3">
+                    <img src="./images/main-logo.png" alt="" width="200px" height="100px">
+                </div>
+                <div class="mt-20 m-3 text-center">
+                    <label for="" class="text-red-500 font-semibold">Select Delivery Area</label><br>
+                    <input type="text" placeholder="Type your delivary area"
+                        class="border border-amber-400 px-11 py-3 rounded-lg hover:border hover:border-red-500">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="mt-5 m-3">
+        <div class="">
+            <div class="m-2">
+                <h1 class="lg:text-2xl text-sm font-bold text-black  hover:text-green-500"><a href="">Populer Picks</a>
+                </h1>
+            </div>
+
+            <div class="lg:flex gap-2 justify-center   owl-carousel owl-theme">
+                <div class=" item border rounded-lg  shadow-lg" style="height: 350px; width: 200px;">
+                    <a href=""> <img src="images/AJCjHZuLbZM6oaM9T4V5Jjr3x11U6fNAiY5aAPmfK___tmd.webp" alt=""
+                            class="rounded-lg" style="height: 350px; width: 200px;"></a>
+                </div>
+
+                <div class=" item shadow-lg rounded-lg  border hover:border hover:border-green-600"
+                    style="height: 350px; width: 200px;">
+                    <div class=" m-2 hover:scale-105">
+                        <a href=""> <img src="./images/BQEizfuMW13kVLCmQH6hcCCzPZjtRlYWW60afhaji___lg.webp" alt=""
+                                width="150px"></a>
+                    </div>
+                    <div class="mt-11 hover:text-green-600  px-3">
+                        <h1><a href="" class="md:text-sm text-xs font-semibold">Beef Bone-In Premium</a></h1>
+                        <h2><a href="" class="md:text-sm text-xs text-gray-400 font-bold">500g</a></h2>
+                        <h2><a href="" class="md:text-sm text-xs text-gray-600 font-semibold">TK 338.00</a></h2>
+                    </div>
+                    <div>
+                        <button
+                            class="md:text-sm text-xs font-bold border border-slate-500 px-11 my-2 mx-3 rounded hover:bg-green-600 hover:text-white">Add
+                            to Cart</button>
+                    </div>
+                </div>
+
+
+
+
+                <div class=" item shadow-lg rounded-lg  border hover:border hover:border-green-600"
+                    style="height: 350px; width: 200px;">
+                    <div class=" m-2 hover:scale-105">
+                        <a href=""> <img src="./images/C6VCyiHnchEDqJdlONtYBzjR9OEzG5NDL43Nww2Y1___lg.webp" alt=""
+                                width="150px"></a>
+                    </div>
+                    <div class="mt-11 hover:text-green-600  px-3">
+                        <h1><a href="" class="md:text-sm text-xs font-semibold">Najir Rice (Premium)</a></h1>
+                        <h2><a href="" class="md:text-sm text-xs text-gray-400 font-bold">KG</a></h2>
+                        <h2><a href="" class="md:text-sm text-xs text-gray-600 font-semibold">TK 78.00</a></h2>
+                    </div>
+                    <div>
+                        <button
+                            class="md:text-sm text-xs font-bold border border-slate-500 px-11 my-2 mx-3 rounded hover:bg-green-600 hover:text-white">Add
+                            to Cart</button>
+                    </div>
+                </div>
+
+
+
+
+                <div class=" item shadow-lg rounded-lg  border hover:border hover:border-green-600"
+                    style="height: 350px; width: 200px;">
+                    <div class=" m-2 hover:scale-105">
+                        <a href=""> <img src="./images/DllnFQEdywq05PpdF7Ca3F1ZGtkIno3InIMPUWmps___lg.webp" alt=""
+                                class=" " width="150px"></a>
+                    </div>
+                    <div class="mt-11 hover:text-green-600  px-3">
+                        <h1><a href="" class="md:text-sm text-xs font-semibold">Rupchanda Soyabean Oil</a></h1>
+                        <h2><a href="" class="md:text-sm text-xs text-gray-400 font-bold">KG</a></h2>
+                        <h2><a href="" class="md:text-sm text-xs text-gray-600 font-semibold">TK 798.00</a></h2>
+                    </div>
+                    <div>
+                        <button
+                            class="md:text-sm text-xs font-bold border border-slate-500 px-11 my-2 mx-3 rounded hover:bg-green-600 hover:text-white">Add
+                            to Cart</button>
+                    </div>
+                </div>
+
+                <div class=" item shadow-lg rounded-lg  border hover:border hover:border-green-600"
+                    style="height: 350px; width: 200px;">
+                    <div class=" m-2 hover:scale-105">
+                        <a href=""> <img src="./images/ESAxRdA9W7qjzmCNzIx2C82IwEsn4eOFfwLc59mj2___lg.webp" alt=""
+                                class=" " width="150px"></a>
+                    </div>
+                    <div class="mt-11 hover:text-green-600  px-3">
+                        <h1><a href="" class="md:text-sm text-xs font-semibold">Minicate Rice (Premium)</a></h1>
+                        <h2><a href="" class="md:text-sm text-xs text-gray-400 font-bold">KG</a></h2>
+                        <h2><a href="" class="md:text-sm text-xs text-gray-600 font-semibold">TK 79.00</a></h2>
+                    </div>
+                    <div>
+                        <button
+                            class="md:text-sm text-xs font-bold border border-slate-500 px-11 my-2 mx-3 rounded hover:bg-green-600 hover:text-white">Add
+                            to Cart</button>
+                    </div>
+                </div>
+
+
+
+                <div class=" item shadow-lg rounded-lg border hover:border hover:border-green-600"
+                    style="height: 350px; width: 200px;">
+                    <div class=" m-2 hover:scale-105">
+                        <a href=""> <img src="./images/FwWmU5DW70vg8fxp6VNAVUuPNBJnBqNRVHumg8i32___lg.webp" alt=""
+                                width="150px"></a>
+                    </div>
+                    <div class="mt-11 hover:text-green-600  px-3">
+                        <h1><a href="" class="md:text-sm text-xs font-semibold">Aarong Sour Curd </a></h1>
+                        <h2><a href="" class="md:text-sm text-xs text-gray-400 font-bold">EACH</a></h2>
+                        <h2><a href="" class="md:text-sm text-xs text-gray-600 font-semibold">TK 179.00</a></h2>
+                    </div>
+                    <div>
+                        <button
+                            class="md:text-sm text-xs font-bold border border-slate-500 px-11 my-2 mx-3 rounded hover:bg-green-600 hover:text-white">Add
+                            to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <section class="mt-5 m-3">
+        <div class="">
+            <div class="m-2 ">
+                <h1 class="lg:text-2xl text-sm font-bold text-black  hover:text-green-500"><a href="">Grocery</a>
+                </h1>
+            </div>
+
+            <div class="lg:flex gap-2 justify-center   owl-carousel owl-theme">
+                <div class=" item border rounded-lg  shadow-lg" style="height: 350px; width: 200px;">
+                    <a href=""> <img src="./images/0006aQBEx9tMJSJTPQM6VLYdVp2mxReA5Jib8HcDSVR___tmd.webp" alt=""
+                            class="rounded-lg" style="height: 350px; width: 200px;"></a>
+                </div>
+
+                <div class=" item shadow-lg rounded-lg  border hover:border hover:border-green-600"
+                    style="height: 350px; width: 200px;">
+                    <div class=" m-2 hover:scale-105">
+                        <a href=""> <img src="./images/111lNeOlbsHx0SjGD2nAMglIbuTLoEgXWl6nB45V3OL___lg.webp" alt=""
+                                width="150px"></a>
+                    </div>
+                    <div class="mt-11 hover:text-green-600  px-3">
+                        <h1><a href="" class="md:text-sm text-xs font-semibold">Musur Dal (Lentil) Local</a></h1>
+                        <h2><a href="" class="md:text-sm text-xs text-gray-400 font-bold">500g</a></h2>
+                        <h2><a href="" class="md:text-sm text-xs text-gray-600 font-semibold">TK 38.00</a></h2>
+                    </div>
+                    <div>
+                        <button
+                            class="md:text-sm text-xs font-bold border border-slate-500 px-11 my-2 mx-3 rounded hover:bg-green-600 hover:text-white">Add
+                            to Cart</button>
+                    </div>
+                </div>
+
+
+
+
+                <div class=" item shadow-lg rounded-lg  border hover:border hover:border-green-600"
+                    style="height: 350px; width: 200px;">
+                    <div class=" m-2 hover:scale-105">
+                        <a href=""> <img src="./images/222NLRAWjZEabujs4AtlyF22wF34yeh9tXhkG4Wb2jT___lg.webp" alt=""
+                                width="150px"></a>
+                    </div>
+                    <div class="mt-11 hover:text-green-600  px-3">
+                        <h1><a href="" class="md:text-sm text-xs font-semibold">Broiler Chicken</a></h1>
+                        <h2><a href="" class="md:text-sm text-xs text-gray-400 font-bold">KG</a></h2>
+                        <h2><a href="" class="md:text-sm text-xs text-gray-600 font-semibold">TK 338.00</a></h2>
+                    </div>
+                    <div>
+                        <button
+                            class="md:text-sm text-xs font-bold border border-slate-500 px-11 my-2 mx-3 rounded hover:bg-green-600 hover:text-white">Add
+                            to Cart</button>
+                    </div>
+                </div>
+
+
+
+
+                <div class=" item shadow-lg rounded-lg  border hover:border hover:border-green-600"
+                    style="height: 350px; width: 200px;">
+                    <div class=" m-2 hover:scale-105">
+                        <a href=""> <img src="./images/333hsH1ee7UBJaiUNVAjlW5KM9RtOs0LfDpqwMkPeLD___lg.webp" alt=""
+                                class=" " width="150px"></a>
+                    </div>
+                    <div class="mt-11 hover:text-green-600  px-3">
+                        <h1><a href="" class="md:text-sm text-xs font-semibold">Kazi Farms</a></h1>
+                        <h2><a href="" class="md:text-sm text-xs text-gray-400 font-bold">KG</a></h2>
+                        <h2><a href="" class="md:text-sm text-xs text-gray-600 font-semibold">TK 198.00</a></h2>
+                    </div>
+                    <div>
+                        <button
+                            class="md:text-sm text-xs font-bold border border-slate-500 px-11 my-2 mx-3 rounded hover:bg-green-600 hover:text-white">Add
+                            to Cart</button>
+                    </div>
+                </div>
+
+                <div class=" item shadow-lg rounded-lg  border hover:border hover:border-green-600"
+                    style="height: 350px; width: 200px;">
+                    <div class=" m-2 hover:scale-105">
+                        <a href=""> <img src="./images/444QUcQX7LY4VbLxXTm1krLhewyZnoK10DmyJd33Naw___lg.webp" alt=""
+                                class=" " width="150px"></a>
+                    </div>
+                    <div class="mt-11 hover:text-green-600  px-3">
+                        <h1><a href="" class="md:text-sm text-xs font-semibold">Minicate Rice (Premium)</a></h1>
+                        <h2><a href="" class="md:text-sm text-xs text-gray-400 font-bold">KG</a></h2>
+                        <h2><a href="" class="md:text-sm text-xs text-gray-600 font-semibold">TK 79.00</a></h2>
+                    </div>
+                    <div>
+                        <button
+                            class="md:text-sm text-xs font-bold border border-slate-500 px-11 my-2 mx-3 rounded hover:bg-green-600 hover:text-white">Add
+                            to Cart</button>
+                    </div>
+                </div>
+
+
+
+                <div class=" item shadow-lg rounded-lg border hover:border hover:border-green-600"
+                    style="height: 350px; width: 200px;">
+                    <div class=" m-2 hover:scale-105">
+                        <a href=""> <img src="./images/555tupMwQ02qEVongk1adk64Nsmn33rsiEtwniirQB6___lg.webp" alt=""
+                                width="150px"></a>
+                    </div>
+                    <div class="mt-11 hover:text-green-600  px-3">
+                        <h1><a href="" class="md:text-sm text-xs font-semibold">White Suger </a></h1>
+                        <h2><a href="" class="md:text-sm text-xs text-gray-400 font-bold">EACH</a></h2>
+                        <h2><a href="" class="md:text-sm text-xs text-gray-600 font-semibold">TK 179.00</a></h2>
+                    </div>
+                    <div>
+                        <button
+                            class="md:text-sm text-xs font-bold border border-slate-500 px-11 my-2 mx-3 rounded hover:bg-green-600 hover:text-white">Add
+                            to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="mt-5 m-3">
+        <div class="">
+            <div class="m-2 ">
+                <h1 class="lg:text-2xl text-sm font-bold text-black  hover:text-green-500"><a href="">Frozen Items</a>
+                </h1>
+            </div>
+
+            <div class="lg:flex gap-2 justify-center   owl-carousel owl-theme">
+                <div class=" item border rounded-lg  shadow-lg" style="height: 350px; width: 200px;">
+                    <a href=""> <img src="./images/A1jK1GwMPAKemb1Z4yEpUVhMw1BLFXzFalR82vbO3Q___tmd.webp" alt=""
+                            class="rounded-lg" style="height: 350px; width: 200px;"></a>
+                </div>
+
+                <div class=" item shadow-lg rounded-lg  border hover:border hover:border-green-600"
+                    style="height: 350px; width: 200px;">
+                    <div class=" m-2 hover:scale-105">
+                        <a href=""> <img src="./images/A2ef6FPa2vyI7kuLxs36eodqkSGaDJdw0GG6L3NFRw___lg.webp" alt=""
+                                width="150px"></a>
+                    </div>
+                    <div class="mt-11 hover:text-green-600  px-3">
+                        <h1><a href="" class="md:text-sm text-xs font-semibold">Kazi Farms Plain Paratha</a></h1>
+                        <h2><a href="" class="md:text-sm text-xs text-gray-400 font-bold">500g</a></h2>
+                        <h2><a href="" class="md:text-sm text-xs text-gray-600 font-semibold">TK 220.00</a></h2>
+                    </div>
+                    <div>
+                        <button
+                            class="md:text-sm text-xs font-bold border border-slate-500 px-11 my-2 mx-3 rounded hover:bg-green-600 hover:text-white">Add
+                            to Cart</button>
+                    </div>
+                </div>
+
+
+
+
+                <div class=" item shadow-lg rounded-lg  border hover:border hover:border-green-600"
+                    style="height: 350px; width: 200px;">
+                    <div class=" m-2 hover:scale-105">
+                        <a href=""> <img src="./images/A3pDVIj9xqEJ7O3FQzIWvU1WXyksFuBmnCrRRK2Ksu___lg.webp" alt=""
+                                width="150px"></a>
+                    </div>
+                    <div class="mt-11 hover:text-green-600  px-3">
+                        <h1><a href="" class="md:text-sm text-xs font-semibold">Kazi Farms Plain Paratha</a></h1>
+                        <h2><a href="" class="md:text-sm text-xs text-gray-400 font-bold">KG</a></h2>
+                        <h2><a href="" class="md:text-sm text-xs text-gray-600 font-semibold">TK 328.00</a></h2>
+                    </div>
+                    <div>
+                        <button
+                            class="md:text-sm text-xs font-bold border border-slate-500 px-11 my-2 mx-3 rounded hover:bg-green-600 hover:text-white">Add
+                            to Cart</button>
+                    </div>
+                </div>
+
+
+
+
+                <div class=" item shadow-lg rounded-lg  border hover:border hover:border-green-600"
+                    style="height: 350px; width: 200px;">
+                    <div class=" m-2 hover:scale-105">
+                        <a href=""> <img src="./images/A4YkqzFR9etANMEXO8Phxmf9NVZnl55Jo7MMnZiy5K___lg.webp" alt=""
+                                class=" " width="150px"></a>
+                    </div>
+                    <div class="mt-11 hover:text-green-600  px-3">
+                        <h1><a href="" class="md:text-sm text-xs font-semibold">Kazi Farms</a></h1>
+                        <h2><a href="" class="md:text-sm text-xs text-gray-400 font-bold">KG</a></h2>
+                        <h2><a href="" class="md:text-sm text-xs text-gray-600 font-semibold">TK 198.00</a></h2>
+                    </div>
+                    <div>
+                        <button
+                            class="md:text-sm text-xs font-bold border border-slate-500 px-11 my-2 mx-3 rounded hover:bg-green-600 hover:text-white">Add
+                            to Cart</button>
+                    </div>
+                </div>
+
+                <div class=" item shadow-lg rounded-lg  border hover:border hover:border-green-600"
+                    style="height: 350px; width: 200px;">
+                    <div class=" m-2 hover:scale-105">
+                        <a href=""> <img src="./images/A5BTJRSgwO0gKN7EeEjDsZzpT4lSHoNCkKmYgjl2ba___lg.webp" alt=""
+                                class=" " width="150px"></a>
+                    </div>
+                    <div class="mt-11 hover:text-green-600  px-3">
+                        <h1><a href="" class="md:text-sm text-xs font-semibold">Minicate Rice (Premium)</a></h1>
+                        <h2><a href="" class="md:text-sm text-xs text-gray-400 font-bold">KG</a></h2>
+                        <h2><a href="" class="md:text-sm text-xs text-gray-600 font-semibold">TK 79.00</a></h2>
+                    </div>
+                    <div>
+                        <button
+                            class="md:text-sm text-xs font-bold border border-slate-500 px-11 my-2 mx-3 rounded hover:bg-green-600 hover:text-white">Add
+                            to Cart</button>
+                    </div>
+                </div>
+
+
+
+                <div class=" item shadow-lg rounded-lg border hover:border hover:border-green-600"
+                    style="height: 350px; width: 200px;">
+                    <div class=" m-2 hover:scale-105">
+                        <a href=""> <img src="./images/A6Q3Ku1MhnSLB5P9ckjkLWcCrPeHEja0VAMiDZLB0z___lg.webp" alt=""
+                                width="150px"></a>
+                    </div>
+                    <div class="mt-11 hover:text-green-600  px-3">
+                        <h1><a href="" class="md:text-sm text-xs font-semibold">Kazi Farms Plain Paratha </a></h1>
+                        <h2><a href="" class="md:text-sm text-xs text-gray-400 font-bold">EACH</a></h2>
+                        <h2><a href="" class="md:text-sm text-xs text-gray-600 font-semibold">TK 179.00</a></h2>
+                    </div>
+                    <div>
+                        <button
+                            class="md:text-sm text-xs font-bold border border-slate-500 px-11 my-2 mx-3 rounded hover:bg-green-600 hover:text-white">Add
+                            to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <section class="mt-5 m-3">
+        <div class="">
+            <div class="m-2 ">
+                <h1 class="lg:text-2xl text-sm font-bold text-black  hover:text-green-500"><a href="">Chocolates &
+                        Snacks</a>
+                </h1>
+            </div>
+
+            <div class="lg:flex gap-2 justify-center   owl-carousel owl-theme">
+                <div class=" item border rounded-lg  shadow-lg" style="height: 350px; width: 200px;">
+                    <a href=""> <img src="./images/B1YtLJX27bAvWmqYckfJEiuJO6hi8WbP7zu00psf1x___tmd.webp" alt=""
+                            class="rounded-lg" style="height: 350px; width: 200px;"></a>
+                </div>
+
+                <div class=" item shadow-lg rounded-lg  border hover:border hover:border-green-600"
+                    style="height: 350px; width: 200px;">
+                    <div class=" m-2 hover:scale-105">
+                        <a href=""> <img src="./images/B20BQFjX3zlD7rzWT8m07w2WzFpgiRCqXEMgmLOd3a___lg.webp" alt=""
+                                width="150px"></a>
+                    </div>
+                    <div class="mt-11 hover:text-green-600  px-3">
+                        <h1><a href="" class="md:text-sm text-xs font-semibold">Chocolates & Snacks</a></h1>
+                        <h2><a href="" class="md:text-sm text-xs text-gray-400 font-bold">500g</a></h2>
+                        <h2><a href="" class="md:text-sm text-xs text-gray-600 font-semibold">TK 320.00</a></h2>
+                    </div>
+                    <div>
+                        <button
+                            class="md:text-sm text-xs font-bold border border-slate-500 px-11 my-2 mx-3 rounded hover:bg-green-600 hover:text-white">Add
+                            to Cart</button>
+                    </div>
+                </div>
+
+
+
+
+                <div class=" item shadow-lg rounded-lg  border hover:border hover:border-green-600"
+                    style="height: 350px; width: 200px;">
+                    <div class=" m-2 hover:scale-105">
+                        <a href=""> <img src="./images/B3Pb8DFE5LnkjACsJulfq3yAPPVRmtpis55Tjm88X0___lg.webp" alt=""
+                                width="150px"></a>
+                    </div>
+                    <div class="mt-11 hover:text-green-600  px-3">
+                        <h1><a href="" class="md:text-sm text-xs font-semibold">Ruchi Hot Chanachur</a></h1>
+                        <h2><a href="" class="md:text-sm text-xs text-gray-400 font-bold">KG</a></h2>
+                        <h2><a href="" class="md:text-sm text-xs text-gray-600 font-semibold">TK 100.00</a></h2>
+                    </div>
+                    <div>
+                        <button
+                            class="md:text-sm text-xs font-bold border border-slate-500 px-11 my-2 mx-3 rounded hover:bg-green-600 hover:text-white">Add
+                            to Cart</button>
+                    </div>
+                </div>
+
+
+
+
+                <div class=" item shadow-lg rounded-lg  border hover:border hover:border-green-600"
+                    style="height: 350px; width: 200px;">
+                    <div class=" m-2 hover:scale-105">
+                        <a href=""> <img src="./images/B48r5GiU6M8BMBzv3qEgaZJ4QLMyX6obYbBwI14w1c___lg.webp" alt=""
+                                class=" " width="150px"></a>
+                    </div>
+                    <div class="mt-11 hover:text-green-600  px-3">
+                        <h1><a href="" class="md:text-sm text-xs font-semibold">Cadbury Dairy Milk</a></h1>
+                        <h2><a href="" class="md:text-sm text-xs text-gray-400 font-bold">KG</a></h2>
+                        <h2><a href="" class="md:text-sm text-xs text-gray-600 font-semibold">TK 100.00</a></h2>
+                    </div>
+                    <div>
+                        <button
+                            class="md:text-sm text-xs font-bold border border-slate-500 px-11 my-2 mx-3 rounded hover:bg-green-600 hover:text-white">Add
+                            to Cart</button>
+                    </div>
+                </div>
+
+                <div class=" item shadow-lg rounded-lg  border hover:border hover:border-green-600"
+                    style="height: 350px; width: 200px;">
+                    <div class=" m-2 hover:scale-105">
+                        <a href=""> <img src="./images/B5OjjIg2wqXFMXC1iL4nl9PGBMuEzEqvGJ5KfdYr14___lg.webp" alt=""
+                                class=" " width="150px"></a>
+                    </div>
+                    <div class="mt-11 hover:text-green-600  px-3">
+                        <h1><a href="" class="md:text-sm text-xs font-semibold">Cadbury Dairy Milk</a></h1>
+                        <h2><a href="" class="md:text-sm text-xs text-gray-400 font-bold">KG</a></h2>
+                        <h2><a href="" class="md:text-sm text-xs text-gray-600 font-semibold">TK 50.00</a></h2>
+                    </div>
+                    <div>
+                        <button
+                            class="md:text-sm text-xs font-bold border border-slate-500 px-11 my-2 mx-3 rounded hover:bg-green-600 hover:text-white">Add
+                            to Cart</button>
+                    </div>
+                </div>
+
+
+
+                <div class=" item shadow-lg rounded-lg border hover:border hover:border-green-600"
+                    style="height: 350px; width: 200px;">
+                    <div class=" m-2 hover:scale-105">
+                        <a href=""> <img src="./images/B6zIb4JA88dxNNSp5D67HoFfNrg7qMHxWJ1xXtaQSo___lg.webp" alt=""
+                                width="150px"></a>
+                    </div>
+                    <div class="mt-11 hover:text-green-600  px-3">
+                        <h1><a href="" class="md:text-sm text-xs font-semibold">Tong Garden Salted </a></h1>
+                        <h2><a href="" class="md:text-sm text-xs text-gray-400 font-bold">EACH</a></h2>
+                        <h2><a href="" class="md:text-sm text-xs text-gray-600 font-semibold">TK 150.00</a></h2>
+                    </div>
+                    <div>
+                        <button
+                            class="md:text-sm text-xs font-bold border border-slate-500 px-11 my-2 mx-3 rounded hover:bg-green-600 hover:text-white">Add
+                            to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="mt-5 m-3">
+        <div class="">
+            <div class="m-2 ">
+                <h1 class="lg:text-2xl text-sm font-bold text-black  hover:text-green-500"><a href="">Every Day Fresh
+                        Vegetable</a>
+                </h1>
+            </div>
+
+            <div class="lg:flex gap-2 justify-center   owl-carousel owl-theme">
+                <div class=" item border rounded-lg  shadow-lg" style="height: 350px; width: 200px;">
+                    <a href=""> <img src="./images/C1H11cfv1wWHZIcUpdQfvfH7mEh1p9sXkI9kJZG8CE___tmd.webp" alt=""
+                            class="rounded-lg" style="height: 350px; width: 200px;"></a>
+                </div>
+
+                <div class=" item shadow-lg rounded-lg  border hover:border hover:border-green-600"
+                    style="height: 350px; width: 200px;">
+                    <div class=" m-2 hover:scale-105">
+                        <a href=""> <img src="./images/C2lojkFvuABgQKCZJZT7XgIp47gfOSMNnWoP0nTGHE___lg.webp" alt=""
+                                width="150px"></a>
+                    </div>
+                    <div class="mt-11 hover:text-green-600  px-3">
+                        <h1><a href="" class="md:text-sm text-xs font-semibold">Cauliflower [full Copi]</a></h1>
+                        <h2><a href="" class="md:text-sm text-xs text-gray-400 font-bold">500g</a></h2>
+                        <h2><a href="" class="md:text-sm text-xs text-gray-600 font-semibold">TK 50.00</a></h2>
+                    </div>
+                    <div>
+                        <button
+                            class="md:text-sm text-xs font-bold border border-slate-500 px-11 my-2 mx-3 rounded hover:bg-green-600 hover:text-white">Add
+                            to Cart</button>
+                    </div>
+                </div>
+
+
+
+
+                <div class=" item shadow-lg rounded-lg  border hover:border hover:border-green-600"
+                    style="height: 350px; width: 200px;">
+                    <div class=" m-2 hover:scale-105">
+                        <a href=""> <img src="./images/C3ZHjREDYR7Nk5owV7ncUfFnQwtOiSsqXUZpvbdWlf___lg.webp" alt=""
+                                width="150px"></a>
+                    </div>
+                    <div class="mt-11 hover:text-green-600  px-3">
+                        <h1><a href="" class="md:text-sm text-xs font-semibold">Potato White Bulk</a></h1>
+                        <h2><a href="" class="md:text-sm text-xs text-gray-400 font-bold">KG</a></h2>
+                        <h2><a href="" class="md:text-sm text-xs text-gray-600 font-semibold">TK 30.00</a></h2>
+                    </div>
+                    <div>
+                        <button
+                            class="md:text-sm text-xs font-bold border border-slate-500 px-11 my-2 mx-3 rounded hover:bg-green-600 hover:text-white">Add
+                            to Cart</button>
+                    </div>
+                </div>
+
+
+
+
+                <div class=" item shadow-lg rounded-lg  border hover:border hover:border-green-600"
+                    style="height: 350px; width: 200px;">
+                    <div class=" m-2 hover:scale-105">
+                        <a href=""> <img src="./images/C47FXenA9r0EzeHmNnEDAgPLeftJ5SNqrCSnkRsPcI___lg.webp" alt=""
+                                class=" " width="150px"></a>
+                    </div>
+                    <div class="mt-11 hover:text-green-600  px-3">
+                        <h1><a href="" class="md:text-sm text-xs font-semibold">Green Chili Local</a></h1>
+                        <h2><a href="" class="md:text-sm text-xs text-gray-400 font-bold">KG</a></h2>
+                        <h2><a href="" class="md:text-sm text-xs text-gray-600 font-semibold">TK 28.00</a></h2>
+                    </div>
+                    <div>
+                        <button
+                            class="md:text-sm text-xs font-bold border border-slate-500 px-11 my-2 mx-3 rounded hover:bg-green-600 hover:text-white">Add
+                            to Cart</button>
+                    </div>
+                </div>
+
+                <div class=" item shadow-lg rounded-lg  border hover:border hover:border-green-600"
+                    style="height: 350px; width: 200px;">
+                    <div class=" m-2 hover:scale-105">
+                        <a href=""> <img src="./images/C5pW6xMIsaTugUMn3B3hjaw13Kyp1RxLF73P1d8Cux___lg.webp" alt=""
+                                class=" " width="150px"></a>
+                    </div>
+                    <div class="mt-11 hover:text-green-600  px-3">
+                        <h1><a href="" class="md:text-sm text-xs font-semibold">Capsicum Green Bulk</a></h1>
+                        <h2><a href="" class="md:text-sm text-xs text-gray-400 font-bold">KG</a></h2>
+                        <h2><a href="" class="md:text-sm text-xs text-gray-600 font-semibold">TK 120.00</a></h2>
+                    </div>
+                    <div>
+                        <button
+                            class="md:text-sm text-xs font-bold border border-slate-500 px-11 my-2 mx-3 rounded hover:bg-green-600 hover:text-white">Add
+                            to Cart</button>
+                    </div>
+                </div>
+
+
+
+                <div class=" item shadow-lg rounded-lg border hover:border hover:border-green-600"
+                    style="height: 350px; width: 200px;">
+                    <div class=" m-2 hover:scale-105">
+                        <a href=""> <img src="./images/C6FMju1TNw9CPtXxhymYBbuawL3qKLNkiC9Wb6lJX8___lg.webp" alt=""
+                                width="150px"></a>
+                    </div>
+                    <div class="mt-11 hover:text-green-600  px-3">
+                        <h1><a href="" class="md:text-sm text-xs font-semibold">Lomba Kalo Begun </a></h1>
+                        <h2><a href="" class="md:text-sm text-xs text-gray-400 font-bold">EACH</a></h2>
+                        <h2><a href="" class="md:text-sm text-xs text-gray-600 font-semibold">TK 50.00</a></h2>
+                    </div>
+                    <div>
+                        <button
+                            class="md:text-sm text-xs font-bold border border-slate-500 px-11 my-2 mx-3 rounded hover:bg-green-600 hover:text-white">Add
+                            to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="mt-5 m-3">
+        <div class="">
+            <div class="m-2 ">
+                <h1 class="lg:text-2xl text-sm font-bold text-black  hover:text-green-500"><a href="">Personal Care</a>
+                </h1>
+            </div>
+
+            <div class="lg:flex gap-2 justify-center   owl-carousel owl-theme">
+                <div class=" item border rounded-lg  shadow-lg" style="height: 350px; width: 200px;">
+                    <a href=""> <img src="./images/D1kIVsoFdWuSSsMuoANVUX0rCwSCgPOYRnheMNnfP0___tmd.webp" alt=""
+                            class="rounded-lg" style="height: 350px; width: 200px;"></a>
+                </div>
+
+                <div class=" item shadow-lg rounded-lg  border hover:border hover:border-green-600"
+                    style="height: 350px; width: 200px;">
+                    <div class=" m-2 hover:scale-105">
+                        <a href=""> <img src="./images/D2XybrWjBA1YKiVsuE1ntVoxRSsh7ROnvjvG4SQxVn___lg.webp" alt=""
+                                width="150px"></a>
+                    </div>
+                    <div class="mt-11 hover:text-green-600  px-3">
+                        <h1><a href="" class="md:text-sm text-xs font-semibold">H&S Anti Hairfall</a></h1>
+                        <h2><a href="" class="md:text-sm text-xs text-gray-400 font-bold">500g</a></h2>
+                        <h2><a href="" class="md:text-sm text-xs text-gray-600 font-semibold">TK 770.00</a></h2>
+                    </div>
+                    <div>
+                        <button
+                            class="md:text-sm text-xs font-bold border border-slate-500 px-11 my-2 mx-3 rounded hover:bg-green-600 hover:text-white">Add
+                            to Cart</button>
+                    </div>
+                </div>
+
+
+
+
+                <div class=" item shadow-lg rounded-lg  border hover:border hover:border-green-600"
+                    style="height: 350px; width: 200px;">
+                    <div class=" m-2 hover:scale-105">
+                        <a href=""> <img src="./images/D33x1KiaGwPanmlpPQ32YMhmlXzpOSVw6zLsZtAYAy___lg.webp" alt=""
+                                width="150px"></a>
+                    </div>
+                    <div class="mt-11 hover:text-green-600  px-3">
+                        <h1><a href="" class="md:text-sm text-xs font-semibold">H&S Anti Hairfall Shampoo</a></h1>
+                        <h2><a href="" class="md:text-sm text-xs text-gray-400 font-bold">KG</a></h2>
+                        <h2><a href="" class="md:text-sm text-xs text-gray-600 font-semibold">TK 130.00</a></h2>
+                    </div>
+                    <div>
+                        <button
+                            class="md:text-sm text-xs font-bold border border-slate-500 px-11 my-2 mx-3 rounded hover:bg-green-600 hover:text-white">Add
+                            to Cart</button>
+                    </div>
+                </div>
+
+
+
+
+                <div class=" item shadow-lg rounded-lg  border hover:border hover:border-green-600"
+                    style="height: 350px; width: 200px;">
+                    <div class=" m-2 hover:scale-105">
+                        <a href=""> <img src="./images/D4wJCbl8oQ6OLPWe7Jgignn2CwkURT8azyOvKMy4Ai___lg.webp" alt=""
+                                class=" " width="150px"></a>
+                    </div>
+                    <div class="mt-11 hover:text-green-600  px-3">
+                        <h1><a href="" class="md:text-sm text-xs font-semibold">Parachute Coconut Oil</a></h1>
+                        <h2><a href="" class="md:text-sm text-xs text-gray-400 font-bold">KG</a></h2>
+                        <h2><a href="" class="md:text-sm text-xs text-gray-600 font-semibold">TK 328.00</a></h2>
+                    </div>
+                    <div>
+                        <button
+                            class="md:text-sm text-xs font-bold border border-slate-500 px-11 my-2 mx-3 rounded hover:bg-green-600 hover:text-white">Add
+                            to Cart</button>
+                    </div>
+                </div>
+
+                <div class=" item shadow-lg rounded-lg  border hover:border hover:border-green-600"
+                    style="height: 350px; width: 200px;">
+                    <div class=" m-2 hover:scale-105">
+                        <a href=""> <img src="./images/D5H8XNZduBrMqRTAKwJdUq0sDoAbNQjDlFdpQzfPz2___lg.webp" alt=""
+                                class=" " width="150px"></a>
+                    </div>
+                    <div class="mt-11 hover:text-green-600  px-3">
+                        <h1><a href="" class="md:text-sm text-xs font-semibold">Lux Jasmine </a></h1>
+                        <h2><a href="" class="md:text-sm text-xs text-gray-400 font-bold">KG</a></h2>
+                        <h2><a href="" class="md:text-sm text-xs text-gray-600 font-semibold">TK 70.00</a></h2>
+                    </div>
+                    <div>
+                        <button
+                            class="md:text-sm text-xs font-bold border border-slate-500 px-11 my-2 mx-3 rounded hover:bg-green-600 hover:text-white">Add
+                            to Cart</button>
+                    </div>
+                </div>
+
+
+
+                <div class=" item shadow-lg rounded-lg border hover:border hover:border-green-600"
+                    style="height: 350px; width: 200px;">
+                    <div class=" m-2 hover:scale-105">
+                        <a href=""> <img src="./images/D6cDrBzgXjQDNl6RvkDvGUGua9zj2yFIN2guOih0gi___lg.webp" alt=""
+                                width="150px"></a>
+                    </div>
+                    <div class="mt-11 hover:text-green-600  px-3">
+                        <h1><a href="" class="md:text-sm text-xs font-semibold">Dove Nour sec</a></h1>
+                        <h2><a href="" class="md:text-sm text-xs text-gray-400 font-bold">EACH</a></h2>
+                        <h2><a href="" class="md:text-sm text-xs text-gray-600 font-semibold">TK 4.00</a></h2>
+                    </div>
+                    <div>
+                        <button
+                            class="md:text-sm text-xs font-bold border border-slate-500 px-11 my-2 mx-3 rounded hover:bg-green-600 hover:text-white">Add
+                            to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="mt-5 m-3">
+        <div class="">
+            <div class="m-2 ">
+                <h1 class="lg:text-2xl text-sm font-bold text-black  hover:text-green-500"><a href="">Cleaning &
+                        Household Items</a>
+                </h1>
+            </div>
+
+            <div class="lg:flex gap-2 justify-center   owl-carousel owl-theme">
+                <div class=" item border rounded-lg  shadow-lg" style="height: 350px; width: 200px;">
+                    <a href=""> <img src="./images/E1vimtVIuijIHPlK0O3QGz2JXW89M0Clwk4dvuNinA___tmd.webp" alt=""
+                            class="rounded-lg" style="height: 350px; width: 200px;"></a>
+                </div>
+
+                <div class=" item shadow-lg rounded-lg  border hover:border hover:border-green-600"
+                    style="height: 350px; width: 200px;">
+                    <div class=" m-2 hover:scale-105">
+                        <a href=""> <img src="./images/E2TGuyHw7ScrGBzhWkvjSX2yeLTCvi6LGajr4Zcr89___lg.webp" alt=""
+                                width="150px"></a>
+                    </div>
+                    <div class="mt-11 hover:text-green-600  px-3">
+                        <h1><a href="" class="md:text-sm text-xs font-semibold">Lifebuoy Handwash</a></h1>
+                        <h2><a href="" class="md:text-sm text-xs text-gray-400 font-bold">500g</a></h2>
+                        <h2><a href="" class="md:text-sm text-xs text-gray-600 font-semibold">TK 99.00</a></h2>
+                    </div>
+                    <div>
+                        <button
+                            class="md:text-sm text-xs font-bold border border-slate-500 px-11 my-2 mx-3 rounded hover:bg-green-600 hover:text-white">Add
+                            to Cart</button>
+                    </div>
+                </div>
+
+
+
+
+                <div class=" item shadow-lg rounded-lg  border hover:border hover:border-green-600"
+                    style="height: 350px; width: 200px;">
+                    <div class=" m-2 hover:scale-105">
+                        <a href=""> <img src="./images/E3gHEYwWzymHuJnks4AjPlxzyi6Bjgg1bGNTz63ZUI___lg.webp" alt=""
+                                width="150px"></a>
+                    </div>
+                    <div class="mt-11 hover:text-green-600  px-3">
+                        <h1><a href="" class="md:text-sm text-xs font-semibold">Wheel 2in1 </a></h1>
+                        <h2><a href="" class="md:text-sm text-xs text-gray-400 font-bold">KG</a></h2>
+                        <h2><a href="" class="md:text-sm text-xs text-gray-600 font-semibold">TK 130.00</a></h2>
+                    </div>
+                    <div>
+                        <button
+                            class="md:text-sm text-xs font-bold border border-slate-500 px-11 my-2 mx-3 rounded hover:bg-green-600 hover:text-white">Add
+                            to Cart</button>
+                    </div>
+                </div>
+
+
+
+
+                <div class=" item shadow-lg rounded-lg  border hover:border hover:border-green-600"
+                    style="height: 350px; width: 200px;">
+                    <div class=" m-2 hover:scale-105">
+                        <a href=""> <img src="./images/E4.webp" alt="" class=" " width="150px"></a>
+                    </div>
+                    <div class="mt-11 hover:text-green-600  px-3">
+                        <h1><a href="" class="md:text-sm text-xs font-semibold">Domex Freguard</a></h1>
+                        <h2><a href="" class="md:text-sm text-xs text-gray-400 font-bold">KG</a></h2>
+                        <h2><a href="" class="md:text-sm text-xs text-gray-600 font-semibold">TK 128.00</a></h2>
+                    </div>
+                    <div>
+                        <button
+                            class="md:text-sm text-xs font-bold border border-slate-500 px-11 my-2 mx-3 rounded hover:bg-green-600 hover:text-white">Add
+                            to Cart</button>
+                    </div>
+                </div>
+
+                <div class=" item shadow-lg rounded-lg  border hover:border hover:border-green-600"
+                    style="height: 350px; width: 200px;">
+                    <div class=" m-2 hover:scale-105">
+                        <a href=""> <img src="./images/E5FCTufIWWPay1WsFFv6JJLqJ5Npq3gfwD3012qdsw___lg.webp" alt=""
+                                class=" " width="150px"></a>
+                    </div>
+                    <div class="mt-11 hover:text-green-600  px-3">
+                        <h1><a href="" class="md:text-sm text-xs font-semibold">Vim Dishwash Bar </a></h1>
+                        <h2><a href="" class="md:text-sm text-xs text-gray-400 font-bold">KG</a></h2>
+                        <h2><a href="" class="md:text-sm text-xs text-gray-600 font-semibold">TK 90.00</a></h2>
+                    </div>
+                    <div>
+                        <button
+                            class="md:text-sm text-xs font-bold border border-slate-500 px-11 my-2 mx-3 rounded hover:bg-green-600 hover:text-white">Add
+                            to Cart</button>
+                    </div>
+                </div>
+
+
+
+                <div class=" item shadow-lg rounded-lg border hover:border hover:border-green-600"
+                    style="height: 350px; width: 200px;">
+                    <div class=" m-2 hover:scale-105">
+                        <a href=""> <img src="./images/E6IjbJjZJ3r4inOQU8kpMoCIZ7zUH8Rrc5x1zkYVQf___lg.webp" alt=""
+                                width="150px"></a>
+                    </div>
+                    <div class="mt-11 hover:text-green-600  px-3">
+                        <h1><a href="" class="md:text-sm text-xs font-semibold">Bashundhara Tissue</a></h1>
+                        <h2><a href="" class="md:text-sm text-xs text-gray-400 font-bold">EACH</a></h2>
+                        <h2><a href="" class="md:text-sm text-xs text-gray-600 font-semibold">TK 40.00</a></h2>
+                    </div>
+                    <div>
+                        <button
+                            class="md:text-sm text-xs font-bold border border-slate-500 px-11 my-2 mx-3 rounded hover:bg-green-600 hover:text-white">Add
+                            to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <section class="mt-5 m-3">
+        <div class="">
+            <div class="m-2 ">
+                <h1 class="lg:text-2xl text-sm font-bold text-black  hover:text-green-500"><a href="">Breakfast</a>
+                </h1>
+            </div>
+
+            <div class="lg:flex gap-2 justify-center   owl-carousel owl-theme">
+                <div class=" item border rounded-lg  shadow-lg" style="height: 350px; width: 200px;">
+                    <a href=""> <img src="./images/F1kzpXuFNjKvzfVIuW1bXalXhCjGF8fN7LIqKIfbEw___tmd.webp" alt=""
+                            class="rounded-lg" style="height: 350px; width: 200px;"></a>
+                </div>
+
+                <div class=" item shadow-lg rounded-lg  border hover:border hover:border-green-600"
+                    style="height: 350px; width: 200px;">
+                    <div class=" m-2 hover:scale-105">
+                        <a href=""> <img src="./images/F27oGcQOYGPOJelwIvY07VdemiHRqAfoC3gpuAtJdq___lg.webp" alt=""
+                                width="150px"></a>
+                    </div>
+                    <div class="mt-11 hover:text-green-600  px-3">
+                        <h1><a href="" class="md:text-sm text-xs font-semibold">Nutri+nucella</a></h1>
+                        <h2><a href="" class="md:text-sm text-xs text-gray-400 font-bold">500g</a></h2>
+                        <h2><a href="" class="md:text-sm text-xs text-gray-600 font-semibold">TK 399.00</a></h2>
+                    </div>
+                    <div>
+                        <button
+                            class="md:text-sm text-xs font-bold border border-slate-500 px-11 my-2 mx-3 rounded hover:bg-green-600 hover:text-white">Add
+                            to Cart</button>
+                    </div>
+                </div>
+
+
+
+
+                <div class=" item shadow-lg rounded-lg  border hover:border hover:border-green-600"
+                    style="height: 350px; width: 200px;">
+                    <div class=" m-2 hover:scale-105">
+                        <a href=""> <img src="./images/F3Aqz2ThMWMw8zcbr1Cuof8Jbz6UD6YQKDa20AhagS___lg.webp" alt=""
+                                width="150px"></a>
+                    </div>
+                    <div class="mt-11 hover:text-green-600  px-3">
+                        <h1><a href="" class="md:text-sm text-xs font-semibold">Ispahani Mirzapur</a></h1>
+                        <h2><a href="" class="md:text-sm text-xs text-gray-400 font-bold">KG</a></h2>
+                        <h2><a href="" class="md:text-sm text-xs text-gray-600 font-semibold">TK 180.00</a></h2>
+                    </div>
+                    <div>
+                        <button
+                            class="md:text-sm text-xs font-bold border border-slate-500 px-11 my-2 mx-3 rounded hover:bg-green-600 hover:text-white">Add
+                            to Cart</button>
+                    </div>
+                </div>
+
+
+
+
+                <div class=" item shadow-lg rounded-lg  border hover:border hover:border-green-600"
+                    style="height: 350px; width: 200px;">
+                    <div class=" m-2 hover:scale-105">
+                        <a href=""> <img src="./images/F4yE7FBNbw1i1iaUdCjMF1arQ8kIgltXWdEzLtgbPz___lg.webp" alt=""
+                                class=" " width="150px"></a>
+                    </div>
+                    <div class="mt-11 hover:text-green-600  px-3">
+                        <h1><a href="" class="md:text-sm text-xs font-semibold">Nutri+nucella</a></h1>
+                        <h2><a href="" class="md:text-sm text-xs text-gray-400 font-bold">KG</a></h2>
+                        <h2><a href="" class="md:text-sm text-xs text-gray-600 font-semibold">TK 428.00</a></h2>
+                    </div>
+                    <div>
+                        <button
+                            class="md:text-sm text-xs font-bold border border-slate-500 px-11 my-2 mx-3 rounded hover:bg-green-600 hover:text-white">Add
+                            to Cart</button>
+                    </div>
+                </div>
+
+                <div class=" item shadow-lg rounded-lg  border hover:border hover:border-green-600"
+                    style="height: 350px; width: 200px;">
+                    <div class=" m-2 hover:scale-105">
+                        <a href=""> <img src="./images/F51pJ9kAntn7yoDIx2fHeUnVjP1x2A47zEN9nf3Xao___lg.webp" alt=""
+                                class=" " width="150px"></a>
+                    </div>
+                    <div class="mt-11 hover:text-green-600  px-3">
+                        <h1><a href="" class="md:text-sm text-xs font-semibold">Bread Pit 50-50 </a></h1>
+                        <h2><a href="" class="md:text-sm text-xs text-gray-400 font-bold">KG</a></h2>
+                        <h2><a href="" class="md:text-sm text-xs text-gray-600 font-semibold">TK 190.00</a></h2>
+                    </div>
+                    <div>
+                        <button
+                            class="md:text-sm text-xs font-bold border border-slate-500 px-11 my-2 mx-3 rounded hover:bg-green-600 hover:text-white">Add
+                            to Cart</button>
+                    </div>
+                </div>
+
+
+
+                <div class=" item shadow-lg rounded-lg border hover:border hover:border-green-600"
+                    style="height: 350px; width: 200px;">
+                    <div class=" m-2 hover:scale-105">
+                        <a href=""> <img src="./images/F6FCll5mmW7bmwixcKdxP9IVZgWL7SHMNsHWCHK5Ag___lg.webp" alt=""
+                                width="150px"></a>
+                    </div>
+                    <div class="mt-11 hover:text-green-600  px-3">
+                        <h1><a href="" class="md:text-sm text-xs font-semibold">NUTRI+NUCELLA</a></h1>
+                        <h2><a href="" class="md:text-sm text-xs text-gray-400 font-bold">EACH</a></h2>
+                        <h2><a href="" class="md:text-sm text-xs text-gray-600 font-semibold">TK 540.00</a></h2>
+                    </div>
+                    <div>
+                        <button
+                            class="md:text-sm text-xs font-bold border border-slate-500 px-11 my-2 mx-3 rounded hover:bg-green-600 hover:text-white">Add
+                            to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section>
+        <div class="lg:flex grid grid-cols-2 gap-1 m-2">
+            <div class="border border-slate-300 shadow-lg m-1">
+                <a href=""> <img src="./images/G1obdKqOnaFyXanJbG1vVdNoK0iSrLwb7ExlaP8LSQ___llg.webp" alt=""></a>
+            </div>
+            <div class="border border-slate-300 shadow-lg m-1">
+                <a href=""><img src="./images/G2rAjjvcUw4bY028fg6ellPsrviy203H1hfJscWdD0___llg.webp" alt=""></a>
+            </div>
+            <div class="border border-slate-300 shadow-lg m-1">
+                <img src="./images/G3PqzOC60mU71pACYhRnBezJQwIxaMA4ZnQvdPqlT4___llg.webp" alt="">
+            </div>
+            <div class="border border-slate-300 shadow-lg m-1">
+                <a href=""> <img src="./images/G4wBF8ePDAfy4jmod43soVdhG8H5lqMLTVWUUm3bnr___llg.webp" alt=""></a>
+            </div>
+            <div class="border border-slate-300 shadow-lg m-1">
+                <a href=""> <img src="./images/G5vidRpnviEUwCBustEMYm1ZzSbgPS1wzKit2Yyiyi___llg.webp" alt=""></a>
+            </div>
+            <div class="border border-slate-300 shadow-lg m-1">
+                <a href=""><img src="./images/G6lrFQkECmJiHo99w0V2GUqHz4XdMzBSSLYSgCVnWH___llg.webp" alt=""></a>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section>
+        <div class="lg:flex lg:justify-around grid grid-cols-2">
+            <div class="m-3">
+                <div>
+                    <h1 class="mt-2 font-semibold text-2xl">Customer Services</h1>
+                </div>
+                <ul class="mt-3 text-sm">
+                    <li><a href="">Meena Bazar Stores</a></li>
+                    <li><a href="">Frequently Asked Questions</a></li>
+                    <li><a href="">Terms and Conditions</a></li>
+                    <li><a href="">Privacy Policy</a></li>
+                </ul>
+            </div>
+
+            <div class="m-3">
+                <div>
+                    <h1 class="mt-2 font-semibold text-2xl">Meena Bazar</h1>
+                </div>
+                <ul class="mt-3 text-sm">
+                    <li><a href="">About Meena Bazar</a></li>
+                    <li><a href="">Shipping and Delivery</a></li>
+                    <li><a href="">Customer Care</a></li>
+                    <li><a href="">Careers</a></li>
+                </ul>
+            </div>
+
+
+            <div class="m-3">
+                <div>
+                    <h1 class="mt-2 font-semibold text-2xl">Contact Us</h1>
+                </div>
+                <ul class="mt-3 text-sm">
+                    <li>House: 44, Road: 16 (27 Old), Dhanmondi, Dhaka - 1209, Bangladesh</li>
+                    <li><a href="">Frequently Asked Questions</a></li>
+                    <li>info@meenabazar.com.bd</li>
+                    <li>01933-117755</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+
+        <div class="flex bg-green-600 justify-between" >
+            <div class="m-2">
+                <h1 class="text-sm text-white">Meena Bazar, established in 2002,<br> is one of the largest retail supermarket <br> chains in Bangladesh,
+                    currently operates <br> in Dhaka & Chattogram.</h1>
+            </div>
+            <div class="m-2">
+                <h1 class="text-center text-white font-bold text-2xl ">Follow Us</h1>
+                <div class="flex text-3xl mt-2">
+                    <ion-icon name="logo-facebook" class="px-4 text-white"></ion-icon>
+                    <ion-icon name="logo-youtube" class="px-4 text-white"></ion-icon>
+                    <ion-icon name="logo-instagram" class="px-4 text-white"></ion-icon>
+
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <h1 class="text-center bg-green-400 text-white font-bold">© 2023 Copyright :  Meena Bazar Online All Rights Reserved</h1>
+        </div>
+    </section>
+
+
+    <script src="./script.js"></script>
+    <script src="./scr.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+    <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
